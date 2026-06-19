@@ -10,7 +10,7 @@ fi
 mkdir -p bin
 
 # 2. Compile ton code
-javac -cp "lib/servlet-api.jar" -d bin src/mg/itu/Controller.java src/main/java/FrontControllerServlet.java 
+javac -cp "lib/servlet-api.jar" -d bin src/utils/Scannerrrs.java src/mg/itu/Controller.java src/main/java/FrontControllerServlet.java 
 
 # 3. Crée le fichier JAR
 jar -cvf essai.jar -C bin .
