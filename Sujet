@@ -1,0 +1,32 @@
+Test : 
+- class testController 
+objectif : ze classe nasiana @Controller de fantatra Framework oe controller
+
+Framework :
+- micreer classe AnnotationController au niveau framework : ok 
+mgitu-xxx-annotation-Controller
+- classe utilitaire : 
+
+- bout du code :
+    - execute soit au demarrage de l application Web (Listener)
+    - execute soit 1 er appel FrontServlet (init)
+
+FrontServletController : 
+    - Liste de Controller
+    - init() miparcourir an izay classe amin ny classe path , de rehefa misy annotation de atao anaty Liste Controller.
+
+Afaka to de ny controller rehetra no alaina de tadiavina
+Afaka to de nu package omen ny dev an ilay framework no tadiavina :
+
+- Deuxiemee :
+    par configuration : 
+    par Web xml , on initialise le package de controller
+                , on initialise le convention nom de controller
+
+
+Creation Methode : 
+omena ilay annotation , package => aiza na aiza 
+
+Listener est une classe.
+
+
