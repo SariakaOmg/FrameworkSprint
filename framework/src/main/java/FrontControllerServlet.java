@@ -17,8 +17,12 @@ public class FrontControllerServlet extends jakarta.servlet.http.HttpServlet {
     private String Errer;
 
     public void init() throws ServletException {
-        String chemine = "/opt/tomcat/webapps/testFramework/WEB-INF/classes";
-        String packageContr = "";
+         // Étape A : Récupérer la valeur déclarée dans le web.xml ("/WEB-INF/classes/")
+        String parametreChemin = this.getInitParameter("CheminClasses");
+
+        // Étape B : Convertir en chemin absolu réel sur le disque
+        String chemine = this.getServletContext().getRealPath(parametreChemin);
+       String packageContr = "";
         if (getInitParameter("PackCon") != null) {
             packageContr = getInitParameter("PackCon");
         }
